@@ -41,7 +41,7 @@ while True:
             second_num = random.randint(1, 10)
 
     # Ask the user for a re-roll
-    reroll = input("You want to reroll that 🤔 (y/n) ").lower()
+    reroll = input("You want to reroll that? (y/n) ").lower()
 
     if reroll == "n":
         print("Thanks for playing my RNG game")
