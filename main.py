@@ -4,7 +4,7 @@
 # The import of the random module
 import random
 
-# Intro to the program
+# Intro and Instructions to the program
 print("Hello and welcome to RNG Game press Enter / Return")
 input()
 print("🔴 INSTRUCTIONS 🔴")
@@ -21,19 +21,19 @@ second_num = random.randint(1, 10)
 reset_game = True
 
 while True:
-    # checks for win
+    # Checks if the user won
     if first_num == 10 and second_num == 10 and reset_game == True:
         print("Congratulations")
         input()
         print("You beat my game once hwo many times you can you beat it?")
         reset_game = True
     else:
-        # print them out
+        # Print out the first and second set of random numbers
         print("You got 🥁")
         print(first_num)
         print(second_num)
         
-         # So it dosen't reroll if their is a ten aleady their 
+         # So it doesn't reroll if there is a ten aleady on the board 
         if first_num != 10:
             first_num = random.randint(1, 10)
 
@@ -45,9 +45,7 @@ while True:
 
     if reroll == "n":
         print("Thanks for playing my RNG game")
-        # break out of the loop!
+        
+        # Breaks out of the loop
         break
-    # else:
-    #     reroll == "" or " " or "  " or "   " or "    " or "     " or "      " or "       " or "        " or "         " or "          "
-    #     print("Good Luck you can't cheat it by spamming enter")
-    #     break
+
