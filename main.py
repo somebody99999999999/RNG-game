@@ -28,19 +28,19 @@ while True:
         print("You beat my game once hwo many times you can you beat it?")
         reset_game = True
     else:
-        # Print out the first and second set of random numbers
+        # Prints out the first and second set of random numbers
         print("You got 🥁")
         print(first_num)
         print(second_num)
         
-         # So it doesn't reroll if there is a ten aleady on the board 
+        # So it doesn't reroll if there is a ten aleady on the board 
         if first_num != 10:
             first_num = random.randint(1, 10)
 
         if second_num != 10:
             second_num = random.randint(1, 10)
 
-    # ask for re-roll
+    # Ask the user for a re-roll
     reroll = input("You want to reroll that 🤔 (y/n) ").lower()
 
     if reroll == "n":
