@@ -24,7 +24,6 @@ while True:
         # Checks if the user won
         if first_num == 10 and second_num == 10 and reset_game == True:
             print("Congratulations")
-            input()
             print("You beat my game")
             reset_game = True
         else:
@@ -48,9 +47,9 @@ while True:
             # Breaks out of the loop
             break
 
-        if reroll == "y":
+        if reroll == "y" or "Y":
             print('ok')
 
-        if reroll == " " or "":
-            print("You Cheat it like that ")
-            
+        # if reroll == "Spacebar":
+        #     print("You can't cheat it like that ")
+        #     break
