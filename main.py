@@ -47,9 +47,10 @@ while True:
             # Breaks out of the loop
             break
 
-        if reroll == "y" or "Y":
+        if reroll == "y" and "Y":
             print('ok')
+            break
 
-        # if reroll == "Spacebar":
-        #     print("You can't cheat it like that ")
-        #     break
+        if reroll ==  "" :
+            print("You can't cheat it like that ")
+            break
