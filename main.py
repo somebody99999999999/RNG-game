@@ -20,37 +20,42 @@ second_num = random.randint(1, 10)
 
 reset_game = True
 
+
 while True:
-        # Checks if the user won
-        if first_num == 10 and second_num == 10 and reset_game == True:
-            print("Congratulations")
-            print("You beat my game")
-            reset_game = True
-        else:
-            # Prints out the first and second set of random numbers
-            print("The numbers you got is ...")
-            print(first_num)
-            print(second_num)
-            
-            # So it doesn't reroll if there is a ten aleady on the board 
-            if first_num != 10:
-                first_num = random.randint(1, 10)
-
-            if second_num != 10:
-                second_num = random.randint(1, 10)
-
         # Ask the user for a re-roll
         reroll = input("You want to get a reroll? (y/n) ").lower()
 
         if reroll == "n":
             print("Bye but thanks for playing my RNG game")
+            
             # Breaks out of the loop
             break
 
         if reroll == "y" and "Y":
-            print('ok')
-            break
 
-        if reroll ==  "" :
-            print("You can't cheat it like that ")
+            # Checks if the user won
+            if first_num == 10 and second_num == 10 and reset_game == True:
+                print("Congratulations")
+                print("You beat my game")
+                reset_game = True
+
+            else:
+
+                # Prints out the first and second set of random numbers
+                print("The numbers you got is ...")
+                print(first_num)
+                print(second_num)
+                
+                # So it doesn't reroll if there is a ten aleady on the board 
+                if first_num != 10:
+                    first_num = random.randint(1, 10)
+
+                if second_num != 10:
+                    second_num = random.randint(1, 10)
+
+        # The Anti Cheat so they can't just spam space to win everytime
+        if reroll ==  "":
+            print("")
+            print("Nice try play the game the right way ")
+            print("")
             break
