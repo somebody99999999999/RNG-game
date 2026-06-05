@@ -8,7 +8,7 @@ import random
 print("Hello and welcome to RNG Game press Enter / Return")
 input()
 print("🔴 INSTRUCTIONS 🔴")
-print(" You need to get the same pair of numbers on top of each other to win! ")
+print(" You need to get the same pair of numbers on top of each other to win ")
 print("Press Enter / Return to start the game ")
 input()
 
